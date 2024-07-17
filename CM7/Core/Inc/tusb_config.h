@@ -51,8 +51,8 @@
 #define CFG_TUSB_MCU                 OPT_MCU_STM32H7
 #define CFG_TUSB_OS                  OPT_OS_NONE
 #define BOARD_DEVICE_RHPORT_SPEED    OPT_MODE_FULL_SPEED  // 12mbps
-#define BOARD_DEVICE_RHPORT_NUM      1 // USB_FS
-#define CFG_TUSB_RHPORT1_MODE        (OPT_MODE_DEVICE | OPT_MODE_FULL_SPEED)
+#define BOARD_DEVICE_RHPORT_NUM      0 // USB_FS
+#define CFG_TUSB_RHPORT0_MODE        (OPT_MODE_DEVICE | OPT_MODE_FULL_SPEED)
 
 //--------------------------------------------------------------------
 // Common Configuration
