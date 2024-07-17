@@ -22,7 +22,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "tusb.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -145,7 +145,7 @@ Error_Handler();
   MX_FATFS_Init();
   MX_USB_OTG_FS_PCD_Init();
   /* USER CODE BEGIN 2 */
-
+  tusb_init();
   /* USER CODE END 2 */
 
   /* Initialize leds */
@@ -195,6 +195,7 @@ Error_Handler();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+    tud_task();
   }
   /* USER CODE END 3 */
 }
